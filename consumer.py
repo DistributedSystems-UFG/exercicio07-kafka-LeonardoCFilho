@@ -16,4 +16,4 @@ except:
   
 consumer.subscribe([topic])
 for msg in consumer:
-    print (msg.value)
+    print (msg.value.decode()) # Adicionado decode para não converter UTF-8 em ascii
